@@ -1,1 +1,1 @@
-var makersMixer = angular.module('MakersMixer', ['ngResource']);
+var makerMixer = angular.module('MakerMixer', ['ngResource']);

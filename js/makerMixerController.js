@@ -1,0 +1,3 @@
+makerMixer.controller('MakerMixerController', [function() {
+
+}]);

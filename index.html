@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="MakersMixer">
+<html lang="en" ng-app="MakerMixer">
   <head>
     <meta charset="utf-8">
     <title>Makers Mix</title>
@@ -8,8 +8,9 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/makerMixerController.js"></script>
   </head>
-  <body>
+  <body ng-controller="MakerMixerController as listCtrl">
     <footer>
       <form class="form-horizontal">
         <input type="text" name="nameOfPerson" placeholder="Enter name">
