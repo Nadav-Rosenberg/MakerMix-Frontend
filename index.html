@@ -13,24 +13,38 @@
   <body ng-controller="MakerMixerController as listCtrl">
     <footer>
       <form class="form-horizontal">
-        <input type="text" name="nameOfPerson" placeholder="Enter name">
+<!--         <input type="text" name="nameOfPerson" placeholder="Enter name">
         <p> Has Paired With?</p> <input type="checkbox" name="hasPairedWith">
         <p> On Blacklist?</p> <input type="checkbox" name="isblackList">
         <p>
         <input type="text" name="numberOfCommits"placeholder="Number of Commits">
         <p>
-        <button class="btn">Add Person</button>
+        <button class="btn" ng-click="listCtrl.addMaker()">Add Maker</button> -->
+        <button class="btn" ng-click="listCtrl.importList()">Import List</button>
       </form>
       <ul class="list-group">
-        <li class="list-group-item">
-          Nadav Rosenberg, Yes, No, 280
-        </li>
-        <li class="list-group-item">
-          Edmund O'Brien, No, Yes, 174
-        </li>
-        <li class="list-group-item">
-          Sammy Abukmeil, Yes, No, 12
-        <li>
+          <li class="list-group-item">
+            <table>
+              <tr><td>Name</td><td>Paired?</td><td>Black List?</td><td>Commits</td></tr>
+            </table>
+          </li>
+          <li class="list-group-item">
+            <table>
+              <tr><td>Nadav Rosenberg</td><td>Yes</td><td>No</td><td>280</td></tr>
+            </table>
+          </li>
+          <li class="list-group-item">
+            <table>
+              <tr><td>Edmund O'Brien</td><td>No</td><td>Yes</td><td>174</td></tr>
+            </table>
+          </li>
+          <li class="list-group-item">
+            <table>
+              <tr><td>Sammy Abukmeil</td><td>Yes</td><td>No</td><td>12</td></tr>
+            </table>
+          <li>
+        </table> 
+      </ul>
     </div>
   </body>
 </html>
